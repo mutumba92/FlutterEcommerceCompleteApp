@@ -1,32 +1,22 @@
-import "package:flutter/material.dart";
+import 'package:flutter/material.dart';
+import 'package:ecommerce_application/utils/constants/colors.dart';
 
-class TBotttomSheet {
+class TBottomSheetTheme {
+  TBottomSheetTheme._();
 
-  TBotttomSheet._();
-
-  // --light mode --
-  static final lightModeBottomSheet = BottomSheetThemeData(
+  static BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: Colors.white,
-    modalBackgroundColor: Colors.white,
-    constraints:  const BoxConstraints(minWidth: double.infinity),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(16.0)
-    )
-
+    backgroundColor: TColors.white,
+    modalBackgroundColor: TColors.white,
+    constraints: const BoxConstraints(minWidth: double.infinity),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );
 
-
-// -- dark mode ---
-static final darkModeBottomSheet = BottomSheetThemeData(
+  static BottomSheetThemeData darkBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: Colors.black,
-    modalBackgroundColor: Colors.black,
-    constraints:  const BoxConstraints(minWidth: double.infinity),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(16.0)
-    )
-
+    backgroundColor: TColors.black,
+    modalBackgroundColor: TColors.black,
+    constraints: const BoxConstraints(minWidth: double.infinity),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );
-
 }
